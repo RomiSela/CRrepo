@@ -1,0 +1,32 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using OpenQA.Selenium;
+using Core;
+
+namespace Infrastructure
+{
+    public class ProductInCart : ComponentBase
+    {
+        private IWebElement TotalPrice => ParentElement.WaitAndFindElement(By.CssSelector(".cart_total .price"));
+        private Quantity Quantity => new Quantity(Driver, ParentElement.WaitAndFindElement(By.CssSelector(".cart_quantity.text-center")));
+        private IWebElement TrashButton => ParentElement.WaitAndFindElement(By.CssSelector(".icon-trash"));
+        private IWebElement UnitPrice => ParentElement.WaitAndFindElement(By.CssSelector(".cart_unit .price span"));
+
+        public ProductInCart(IWebDriver driver, IWebElement element) : base(driver, element)
+        {
+        }
+
+        public void PressTrashButton() => TrashButton.Click();
+
+        public void ClickOnAddQuantity() => Quantity.ClickOnAddQuantity();
+
+        public double GetUnitPrice() => double.Parse(UnitPrice.Text.Substring(1));
+
+        public double GetTotalPrice() => double.Parse(TotalPrice.Text.Substring(1));
+
+
+    }
+}

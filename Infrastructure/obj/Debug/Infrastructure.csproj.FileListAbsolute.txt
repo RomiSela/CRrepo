@@ -1,0 +1,18 @@
+d:\my documents\visual studio 2015\Projects\UnitTestProject1\Infrastructure\bin\Debug\Infrastructure.dll
+d:\my documents\visual studio 2015\Projects\UnitTestProject1\Infrastructure\bin\Debug\Infrastructure.pdb
+d:\my documents\visual studio 2015\Projects\UnitTestProject1\Infrastructure\bin\Debug\WebDriver.dll
+d:\my documents\visual studio 2015\Projects\UnitTestProject1\Infrastructure\bin\Debug\WebDriver.xml
+d:\my documents\visual studio 2015\Projects\UnitTestProject1\Infrastructure\obj\Debug\Infrastructure.csprojResolveAssemblyReference.cache
+d:\my documents\visual studio 2015\Projects\UnitTestProject1\Infrastructure\obj\Debug\Infrastructure.dll
+d:\my documents\visual studio 2015\Projects\UnitTestProject1\Infrastructure\obj\Debug\Infrastructure.pdb
+d:\my documents\visual studio 2015\Projects\UnitTestProject1\Infrastructure\bin\Debug\Core.dll
+d:\my documents\visual studio 2015\Projects\UnitTestProject1\Infrastructure\bin\Debug\Core.pdb
+C:\Users\romi\Desktop\CRrepos\CRrepo\Infrastructure\bin\Debug\Infrastructure.dll
+C:\Users\romi\Desktop\CRrepos\CRrepo\Infrastructure\bin\Debug\Infrastructure.pdb
+C:\Users\romi\Desktop\CRrepos\CRrepo\Infrastructure\bin\Debug\Core.dll
+C:\Users\romi\Desktop\CRrepos\CRrepo\Infrastructure\bin\Debug\WebDriver.dll
+C:\Users\romi\Desktop\CRrepos\CRrepo\Infrastructure\bin\Debug\Core.pdb
+C:\Users\romi\Desktop\CRrepos\CRrepo\Infrastructure\bin\Debug\WebDriver.xml
+C:\Users\romi\Desktop\CRrepos\CRrepo\Infrastructure\obj\Debug\Infrastructure.csprojResolveAssemblyReference.cache
+C:\Users\romi\Desktop\CRrepos\CRrepo\Infrastructure\obj\Debug\Infrastructure.dll
+C:\Users\romi\Desktop\CRrepos\CRrepo\Infrastructure\obj\Debug\Infrastructure.pdb

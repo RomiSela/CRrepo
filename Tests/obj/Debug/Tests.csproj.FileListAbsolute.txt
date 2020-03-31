@@ -1,0 +1,40 @@
+d:\my documents\visual studio 2015\Projects\UnitTestProject1\Tests\bin\Debug\Tests.dll
+d:\my documents\visual studio 2015\Projects\UnitTestProject1\Tests\bin\Debug\Tests.pdb
+d:\my documents\visual studio 2015\Projects\UnitTestProject1\Tests\bin\Debug\Infrastructure.dll
+d:\my documents\visual studio 2015\Projects\UnitTestProject1\Tests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+d:\my documents\visual studio 2015\Projects\UnitTestProject1\Tests\bin\Debug\WebDriver.dll
+d:\my documents\visual studio 2015\Projects\UnitTestProject1\Tests\bin\Debug\Infrastructure.pdb
+d:\my documents\visual studio 2015\Projects\UnitTestProject1\Tests\bin\Debug\WebDriver.xml
+d:\my documents\visual studio 2015\Projects\UnitTestProject1\Tests\obj\Debug\Tests.csprojResolveAssemblyReference.cache
+d:\my documents\visual studio 2015\Projects\UnitTestProject1\Tests\obj\Debug\Tests.dll
+d:\my documents\visual studio 2015\Projects\UnitTestProject1\Tests\obj\Debug\Tests.pdb
+d:\my documents\visual studio 2015\Projects\UnitTestProject1\Tests\bin\Debug\Tests.dll.config
+d:\my documents\visual studio 2015\Projects\UnitTestProject1\Tests\bin\Debug\FluentAssertions.dll
+d:\my documents\visual studio 2015\Projects\UnitTestProject1\Tests\bin\Debug\System.ValueTuple.dll
+d:\my documents\visual studio 2015\Projects\UnitTestProject1\Tests\bin\Debug\FluentAssertions.pdb
+d:\my documents\visual studio 2015\Projects\UnitTestProject1\Tests\bin\Debug\FluentAssertions.xml
+d:\my documents\visual studio 2015\Projects\UnitTestProject1\Tests\bin\Debug\System.ValueTuple.xml
+d:\my documents\visual studio 2015\Projects\UnitTestProject1\Tests\bin\Debug\Core.dll
+d:\my documents\visual studio 2015\Projects\UnitTestProject1\Tests\bin\Debug\Core.pdb
+D:\my documents\Visual Studio 2015\Projects\UnitTestProject1\Tests\bin\Debug\Extensions.dll
+D:\my documents\Visual Studio 2015\Projects\UnitTestProject1\Tests\bin\Debug\Extensions.pdb
+C:\Users\romi\Desktop\CRrepos\CRrepo\Tests\bin\Debug\Tests.dll.config
+C:\Users\romi\Desktop\CRrepos\CRrepo\Tests\bin\Debug\Tests.dll
+C:\Users\romi\Desktop\CRrepos\CRrepo\Tests\bin\Debug\Tests.pdb
+C:\Users\romi\Desktop\CRrepos\CRrepo\Tests\bin\Debug\Core.dll
+C:\Users\romi\Desktop\CRrepos\CRrepo\Tests\bin\Debug\Extensions.dll
+C:\Users\romi\Desktop\CRrepos\CRrepo\Tests\bin\Debug\FluentAssertions.dll
+C:\Users\romi\Desktop\CRrepos\CRrepo\Tests\bin\Debug\Infrastructure.dll
+C:\Users\romi\Desktop\CRrepos\CRrepo\Tests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\romi\Desktop\CRrepos\CRrepo\Tests\bin\Debug\System.ValueTuple.dll
+C:\Users\romi\Desktop\CRrepos\CRrepo\Tests\bin\Debug\WebDriver.dll
+C:\Users\romi\Desktop\CRrepos\CRrepo\Tests\bin\Debug\Core.pdb
+C:\Users\romi\Desktop\CRrepos\CRrepo\Tests\bin\Debug\Extensions.pdb
+C:\Users\romi\Desktop\CRrepos\CRrepo\Tests\bin\Debug\Infrastructure.pdb
+C:\Users\romi\Desktop\CRrepos\CRrepo\Tests\bin\Debug\FluentAssertions.pdb
+C:\Users\romi\Desktop\CRrepos\CRrepo\Tests\bin\Debug\FluentAssertions.xml
+C:\Users\romi\Desktop\CRrepos\CRrepo\Tests\bin\Debug\System.ValueTuple.xml
+C:\Users\romi\Desktop\CRrepos\CRrepo\Tests\bin\Debug\WebDriver.xml
+C:\Users\romi\Desktop\CRrepos\CRrepo\Tests\obj\Debug\Tests.csprojResolveAssemblyReference.cache
+C:\Users\romi\Desktop\CRrepos\CRrepo\Tests\obj\Debug\Tests.dll
+C:\Users\romi\Desktop\CRrepos\CRrepo\Tests\obj\Debug\Tests.pdb

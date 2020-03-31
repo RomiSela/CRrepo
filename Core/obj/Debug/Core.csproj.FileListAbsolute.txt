@@ -1,0 +1,14 @@
+d:\my documents\visual studio 2015\Projects\UnitTestProject1\Core\bin\Debug\Core.dll
+d:\my documents\visual studio 2015\Projects\UnitTestProject1\Core\bin\Debug\Core.pdb
+d:\my documents\visual studio 2015\Projects\UnitTestProject1\Core\obj\Debug\Core.csprojResolveAssemblyReference.cache
+d:\my documents\visual studio 2015\Projects\UnitTestProject1\Core\obj\Debug\Core.dll
+d:\my documents\visual studio 2015\Projects\UnitTestProject1\Core\obj\Debug\Core.pdb
+d:\my documents\visual studio 2015\Projects\UnitTestProject1\Core\bin\Debug\WebDriver.dll
+d:\my documents\visual studio 2015\Projects\UnitTestProject1\Core\bin\Debug\WebDriver.xml
+C:\Users\romi\Desktop\CRrepos\CRrepo\Core\bin\Debug\Core.dll
+C:\Users\romi\Desktop\CRrepos\CRrepo\Core\bin\Debug\Core.pdb
+C:\Users\romi\Desktop\CRrepos\CRrepo\Core\bin\Debug\WebDriver.dll
+C:\Users\romi\Desktop\CRrepos\CRrepo\Core\bin\Debug\WebDriver.xml
+C:\Users\romi\Desktop\CRrepos\CRrepo\Core\obj\Debug\Core.csprojResolveAssemblyReference.cache
+C:\Users\romi\Desktop\CRrepos\CRrepo\Core\obj\Debug\Core.dll
+C:\Users\romi\Desktop\CRrepos\CRrepo\Core\obj\Debug\Core.pdb
