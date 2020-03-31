@@ -8,7 +8,7 @@ using Core;
 
 namespace Infrastructure
 {
-    public class OptionsAfterAddingProduct : ComponantBase
+    public class OptionsAfterAddingProduct : ComponentBase
     {
         private IWebElement ContinueShoppingButton => Driver.WaitAndFindElement(By.CssSelector(".continue.btn.btn-default.button.exclusive-medium"));
         private IWebElement ProceedToCheckoutButton => Driver.WaitAndFindElement(By.CssSelector("#layer_cart .btn.btn-default.button-medium"));
@@ -17,14 +17,8 @@ namespace Infrastructure
         {
         }
 
-        public void ClickContinueShoppingButton()
-        {
-            ContinueShoppingButton.Click();
-        }
+        public void ClickContinueShoppingButton() => ContinueShoppingButton.Click();
 
-        public void ClickProceedToCheckoutButton()
-        {
-            ProceedToCheckoutButton.Click();
-        }
+        public void ClickProceedToCheckoutButton() => ProceedToCheckoutButton.Click();
     }
 }

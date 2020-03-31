@@ -10,7 +10,8 @@ namespace Infrastructure.Pages
 {
     public class CartPage : BasePage
     {
-        private List<ProductInCart> ProductInCarts => Driver.FindElements(By.CssSelector("tbody .cart_item")).Select(element => new ProductInCart(Driver, element)).ToList();
+        private List<ProductInCart> ProductInCarts => Driver.FindElements(By.CssSelector("tbody .cart_item"))
+            .Select(element => new ProductInCart(Driver, element)).ToList();
         private IWebElement TotalProductsPrice => Driver.WaitAndFindElement(By.CssSelector("#total_product"));
         private IWebElement AlertNoProducts => Driver.WaitAndFindElement(By.CssSelector(".alert.alert-warning"));
 
@@ -18,38 +19,26 @@ namespace Infrastructure.Pages
         {
         }
 
-        public string GetTotalProductsPrice()
-        {
-            return TotalProductsPrice.Text;
-        }
+        public string GetTotalProductsPrice() => TotalProductsPrice.Text;
 
-        public CartPage PressTrashButton(int place)
+        public CartPage PressTrashButton(int productIndex)
         {
-            ProductInCarts[place].PressTrashButton();
+            ProductInCarts[productIndex].PressTrashButton();
             return new CartPage(Driver);
         }
 
-        public bool AllertPerform()
-        {
-            if (AlertNoProducts.Displayed)
-                return true;
-            else
-                return false;
-        }
+        public bool AllertNoProductPerform() => AlertNoProducts.Displayed;
 
-        public int NumberOfProducts()
-        {
-            return ProductInCarts.Count();
-        }
+        public int NumberOfProducts() => ProductInCarts.Count();
 
-        public CartPage AddQuantityToProduct(int place)
+        public CartPage AddQuantityToProduct(int productIndex)
         {
-            ProductInCarts[place].ClickOnAddQuantity();
+            ProductInCarts[productIndex].ClickOnAddQuantity();
             return new CartPage(Driver);
         }
 
-        public double GetUnitPrice(int place) => ProductInCarts[place].GetUnitPrice();
+        public double GetUnitPrice(int productIndex) => ProductInCarts[productIndex].GetUnitPrice();
 
-        public double GetTotalPrice(int place) => ProductInCarts[place].GetTotalPrice();
+        public double GetTotalPrice(int productIndex) => ProductInCarts[productIndex].GetTotalPrice();
     }
 }

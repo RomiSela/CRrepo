@@ -12,32 +12,32 @@ namespace Extensions
 {
     public static class CatalogPageExtensions
     {
-        public static CartPage AddProductAndProceedToCart(this CatalogPage catalogPage, int place)
+        public static CartPage AddProductAndProceedToCart(this CatalogPage catalogPage, int productIndex)
         {
             return catalogPage
-                .AddProductToCart(place)
+                .AddProductToCart(productIndex)
                 .PressProceedToCheckout();
         }
-        private static CatalogPage AddProductToCart(this CatalogPage catalogPage, int place)
+        private static CatalogPage AddProductToCart(this CatalogPage catalogPage, int productIndex)
         {
             return catalogPage
-                .PointMouseAtPicture(place)
-                .AddToCart(place);
+                .PointMouseAtProduct(productIndex)
+                .AddToCart(productIndex);
         }
 
-        public static CartPage AddTwoProductsAndProceedToCart(this CatalogPage catalogPage)
+        public static CartPage AddTwoProductsAndProceedToCart(this CatalogPage catalogPage, int indexZero, int indexOne)
         {
             return catalogPage
-            .PointMouseAtPicture(ConfigManager.IndexOfProductZero)
-            .AddToCart(ConfigManager.IndexOfProductZero)
+            .PointMouseAtProduct(indexZero)
+            .AddToCart(indexZero)
             .PressContinueShopping()
-            .AddProductAndProceedToCart(ConfigManager.IndexOfProductOne);
+            .AddProductAndProceedToCart(indexOne);
         }
 
-        public static CatalogPage AddProductAndContinueShopping(this CatalogPage catalogPage, int place)
+        public static CatalogPage AddProductAndContinueShopping(this CatalogPage catalogPage, int productIndex)
         {
             return catalogPage
-                .AddProductToCart(place)
+                .AddProductToCart(productIndex)
                 .PressContinueShopping();
         }
     }

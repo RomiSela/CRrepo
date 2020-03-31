@@ -11,7 +11,8 @@ namespace Infrastructure
     public abstract class BasePage : DriverUser
     {
         private IWebElement _cart => Driver.WaitAndFindElement(By.CssSelector(".shopping_cart a"));
-        private TopMenu TopMenu => new TopMenu(Driver, Driver.WaitAndFindElement(By.CssSelector(".sf-menu.clearfix.menu-content.sf-js-enabled.sf-arrows")));
+        private TopMenu TopMenu => 
+            new TopMenu(Driver, Driver.WaitAndFindElement(By.CssSelector(".sf-menu.clearfix.menu-content.sf-js-enabled.sf-arrows")));
 
         public BasePage(IWebDriver driver) : base(driver)
         {

@@ -14,9 +14,9 @@ namespace Tests
         {
             HomePage.
                 MoveToWomenCatalog()
-                .AddProductAndProceedToCart(ConfigManager.IndexOfProductZero)
-                .PressTrashButton(ConfigManager.IndexOfProductZero)
-                .AllertPerform().Should().BeTrue();
+                .AddProductAndProceedToCart(indexNumberZero)
+                .PressTrashButton(indexNumberZero)
+                .AllertNoProductPerform().Should().BeTrue();
         }
 
         [TestMethod]
@@ -24,8 +24,8 @@ namespace Tests
         {
             HomePage
                 .MoveToWomenCatalog()
-                .AddTwoProductsAndProceedToCart()
-                .PressTrashButton(ConfigManager.IndexOfProductZero)
+                .AddTwoProductsAndProceedToCart(indexNumberZero,indexNumberOne)
+                .PressTrashButton(indexNumberZero)
                 .NumberOfProducts().Should().Be(1);
         }
 
@@ -35,10 +35,10 @@ namespace Tests
             double[] UnitTotalPrice =
             HomePage.
                MoveToWomenCatalog()
-               .AddProductAndProceedToCart(ConfigManager.IndexOfProductZero)
-               .AddQuantityToProduct(ConfigManager.IndexOfProductZero)
-               .UnitTotalPrice(ConfigManager.IndexOfProductZero);
-            UnitTotalPrice[1].Should().Be(UnitTotalPrice[0] * 2);
+               .AddProductAndProceedToCart(indexNumberZero)
+               .AddQuantityToProduct(indexNumberZero)
+               .UnitTotalPrice(indexNumberZero);
+            UnitTotalPrice[indexNumberOne].Should().Be(UnitTotalPrice[indexNumberZero] * 2);
         }
     }
 }

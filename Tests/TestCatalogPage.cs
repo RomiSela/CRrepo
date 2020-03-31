@@ -14,8 +14,8 @@ namespace Tests
         {
             HomePage
                .MoveToWomenCatalog()
-               .PointMouseAtPicture(ConfigManager.IndexOfProductZero)
-               .AddToCartButtonPerform(ConfigManager.IndexOfProductZero).Should().BeTrue();
+               .PointMouseAtProduct(indexNumberZero)
+               .AddToCartButtonPerform(indexNumberZero).Should().BeTrue();
         }
 
         [TestMethod]
@@ -23,7 +23,7 @@ namespace Tests
         {
             HomePage
                .MoveToWomenCatalog()
-               .AddToCartButtonPerform(ConfigManager.IndexOfProductZero).Should().BeFalse();
+               .AddToCartButtonPerform(indexNumberZero).Should().BeFalse();
         }
 
         [TestMethod]
@@ -31,7 +31,7 @@ namespace Tests
         {
             HomePage
                 .MoveToWomenCatalog()
-                .AddProductAndProceedToCart(ConfigManager.IndexOfProductZero)
+                .AddProductAndProceedToCart(indexNumberZero)
                 .NumberOfProducts().Should().Be(1);
         }
 
@@ -41,8 +41,9 @@ namespace Tests
             string color = 
             HomePage
                 .MoveToWomenCatalog()
-                .ChooseColor(ConfigManager.IndexOfProductZero, ConfigManager.IndexOfProductZero)
+                .ChooseColor(indexNumberZero, indexNumberZero)
                 .GetSelectedColor();
+            //not done
         }
     }
 }

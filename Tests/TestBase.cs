@@ -11,6 +11,8 @@ namespace Tests
     {
         public HomePage HomePage { get; private set; }
         private IWebDriver Driver { get; set; }
+        public int indexNumberZero { get; private set; }
+        public int indexNumberOne { get; private set; }
 
         [TestInitialize]
         public void TestInitialize()
@@ -19,6 +21,8 @@ namespace Tests
             Driver.Navigate().GoToUrl($@"{ConfigManager.WebsiteUrl}");
             Driver.Manage().Window.Maximize();
             HomePage = new HomePage(Driver);
+            indexNumberOne = 1;
+            indexNumberZero = 0;
         }
 
         [TestCleanup]

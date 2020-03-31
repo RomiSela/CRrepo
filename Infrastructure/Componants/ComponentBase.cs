@@ -7,11 +7,11 @@ using OpenQA.Selenium;
 
 namespace Infrastructure
 {
-    public abstract class ComponantBase : DriverUser
+    public abstract class ComponentBase : DriverUser
     {
         protected IWebElement ParentElement { get; private set; }
 
-        public ComponantBase(IWebDriver driver, IWebElement element) : base(driver)
+        public ComponentBase(IWebDriver driver, IWebElement element) : base(driver)
         {
             ParentElement = element;
         }

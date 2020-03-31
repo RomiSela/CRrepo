@@ -7,7 +7,7 @@ using OpenQA.Selenium;
 using Core;
 namespace Infrastructure
 {
-    public class TopMenu : ComponantBase
+    public class TopMenu : ComponentBase
     {
         private IWebElement WomenButton => ParentElement.FindElements(By.CssSelector("li a")).First();
 
@@ -15,9 +15,6 @@ namespace Infrastructure
         {
         }
 
-        public void ClickOnWomen()
-        {
-            WomenButton.Click();
-        }
+        public void ClickOnWomen() => WomenButton.Click();
     }
 }

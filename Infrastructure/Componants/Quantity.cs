@@ -7,7 +7,7 @@ using OpenQA.Selenium;
 
 namespace Infrastructure
 {
-    public class Quantity : ComponantBase
+    public class Quantity : ComponentBase
     {
         private IWebElement QuantityNumber => ParentElement.WaitAndFindElement(By.ClassName("cart_quantity_input form-control grey"));
         private IWebElement AddQuantity => ParentElement.WaitAndFindElement(By.ClassName("icon-plus"));
@@ -17,9 +17,6 @@ namespace Infrastructure
         {
         }
 
-        public void ClickOnAddQuantity()
-        {
-            AddQuantity.Click();
-        }
+        public void ClickOnAddQuantity() => AddQuantity.Click();
     }
 }

@@ -11,22 +11,24 @@ namespace Infrastructure
 {
     public class CatalogPage : BasePage
     {
-        private List<Product> Products => Driver.FindElements(By.CssSelector(".product_list.grid.row .product-container")).Select(element => new Product(Driver, element)).ToList();
-        private OptionsAfterAddingProduct OptionsAfterAddingProduct => new OptionsAfterAddingProduct(Driver, Driver.FindElements(By.CssSelector(".button-container")).First());
+        private List<Product> Products => Driver.FindElements(By.CssSelector(".product_list.grid.row .product-container"))
+            .Select(element => new Product(Driver, element)).ToList();
+        private OptionsAfterAddingProduct OptionsAfterAddingProduct => 
+            new OptionsAfterAddingProduct(Driver, Driver.FindElements(By.CssSelector(".button-container")).First());
 
         public CatalogPage(IWebDriver driver) : base(driver)
         {
         }
 
-        public CatalogPage PointMouseAtPicture(int place)
+        public CatalogPage PointMouseAtProduct(int productIndex)
         {
-            Products[place].StandOnProduct();
+            Products[productIndex].StandOnProduct();
             return new CatalogPage(Driver);
         }
 
-        public CatalogPage AddToCart(int place)
+        public CatalogPage AddToCart(int productIndex)
         {
-            Products[place].AddToCart();
+            Products[productIndex].AddToCart();
             return new CatalogPage(Driver);
         }
 
@@ -42,14 +44,11 @@ namespace Infrastructure
             return new CartPage(Driver);
         }
 
-        public bool AddToCartButtonPerform(int place)
-        {
-            return Products[place].AddToCartPerform();
-        }
+        public bool AddToCartButtonPerform(int productIndex) => Products[productIndex].AddToCartPerform();
 
-        public ProductPage ChooseColor(int placeProduct, int placeColor)
+        public ProductPage ChooseColor(int productIndex, int colorIndex)
         {
-            Products[placeProduct].ClickColor(placeColor);
+            Products[productIndex].ClickColor(colorIndex);
             return new ProductPage(Driver);
         }
     }
